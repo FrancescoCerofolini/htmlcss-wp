@@ -11,26 +11,53 @@
 }
 .container {
   height: 100vh;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
+  font-family: 'Yusei Magic', sans-serif;
 }
 header {
-  height: 45vh;
+  height: 50vh;
 }
 .title {
-  height: 20%;
-  background-color: pink;
+  height: 15%;
   margin: 2% 0;
 }
 
-.slider {
-  height: 70%;
-  background-color: gold;
-  margin: 2% 0;
+.logo {
+  width: 15%;
+  height: 55%;
 }
+.menu {
+  margin: 2%;
+}
+.menu a {
+  text-decoration: none;
+  color: #9c9c9c;
+  text-transform: uppercase;
+}
+
+.slider {
+  position: relative;
+  height: 95%;
+}
+.banner {
+  height: 85%;
+  width: 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+  border-radius: 20px;
+}
+.banner_text {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+}
+
 main {
   height: 40vh;
-  background-color: red;
 }
 .main_content {
   height: 100%;
@@ -38,33 +65,72 @@ main {
 .subtitle {
   width: 100%;
   height: 20%;
-  background-color: lightblue;
   border-radius: 10px;
   padding: 20px;
+}
+.subtitle h2 {
+  font-size: 0.8em;
+  color: #9c9c9c;
 }
 
 .col {
   float: left;
-  background-color: lightblue;
   height: 78%;
-  margin: 1%;
   border-radius: 10px;
   padding: 20px;
 }
 
 .col_left,
 .col_right {
-  width: 18%;
+  width: 20%;
   overflow: auto;
 }
-
+.col_left .img {
+  width: 100%;
+  max-height: 150px;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.col_right .img {
+  width: 100%;
+  max-height: 150px;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.col_text {
+  font-size: 0.8em;
+  font-family: 'Bitter', serif;
+  color: #9c9c9c;
+}
 .col_middle {
-  width: 58%;
-  margin: 1%;
+  width: 60%;
+  overflow: auto;
+}
+.col_middle .img {
+  width: 100%;
+  max-height: 150px;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.col_middle_text {
+  font-family: 'Bitter', serif;
 }
 
 footer {
   height: 8vh;
   margin: 2% 0;
-  background-color: purple;
+}
+footer h3 {
+  text-align: center;
+  font-size: 0.8em;
+  font-family: 'Bitter', serif;
+}
+footer h3::after {
+  content: '\2764';
+  color: red;
+  font-size: 20px;
+
 }
